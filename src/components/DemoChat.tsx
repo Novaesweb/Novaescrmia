@@ -1,0 +1,9 @@
+"use client";
+import {useState} from "react";
+type Msg={by:"cliente"|"assistente";text:string};
+const scenarios=[
+{label:"Cumprimento",question:"Oiee, tudo bem?",answer:"Oiee! Tudo ótimo 😊 Como posso te ajudar hoje?"},
+{label:"Horário de funcionamento",question:"Qual é o horário de vocês?",answer:"Posso te ajudar com isso! Para informar o horário correto, preciso consultar os dados oficiais da loja."},
+{label:"Falar com atendente",question:"Quero falar com uma pessoa.",answer:"Claro! 💜 Vou te orientar a falar com a equipe responsável. Nesta demonstração, a transferência real ainda não está conectada."}
+];
+export function DemoChat(){const [msgs,setMsgs]=useState<Msg[]>([{by:"assistente",text:"Oi! 👋 Sou uma demonstração ilustrativa do NovaesCRM AI. Escolha uma situação abaixo."}]);const [selected,setSelected]=useState<number|null>(null);function send(i:number){setSelected(i);setMsgs(a=>[...a,{by:"cliente",text:scenarios[i].question},{by:"assistente",text:scenarios[i].answer}]);}return <div className="demo-widget"><div className="demo-heading"><span className="demo-avatar">✦</span><div><b>NovaesCRM AI</b><small>Simulação local — sem IA ou WhatsApp conectado</small></div></div><div className="demo-messages" role="log" aria-live="polite">{msgs.map((m,i)=><p key={i} className={m.by==="cliente"?"demo-msg mine":"demo-msg"}>{m.text}</p>)}</div><div className="demo-choices"><span>Escolha uma situação:</span>{scenarios.map((s,i)=><button type="button" key={s.label} onClick={()=>send(i)} aria-pressed={i===selected}>{s.label}</button>)}</div><button type="button" className="demo-reset" onClick={()=>{setMsgs([{by:"assistente",text:"Oi! 👋 Sou uma demonstração ilustrativa do NovaesCRM AI. Escolha uma situação abaixo."}]);setSelected(null);}}>↻ Reiniciar conversa</button><p className="demo-disclaimer">Exemplo interativo com respostas previamente definidas. Não representa uma IA funcionando em tempo real.</p></div>}
