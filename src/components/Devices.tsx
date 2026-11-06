@@ -1,16 +1,16 @@
 import Image from "next/image";
-import {NovaesMark} from "./NovaesMark";
+
 
 /** Mockup visual ilustrativo: não acessa clientes, WhatsApp ou IA real. */
 export function Devices(){return <div className="premium-showcase" role="img" aria-label="Monitor e smartphone com exemplos ilustrativos de atendimento NovaesWeb e a esfera neon NW ao fundo">
-  <div className="premium-globe" aria-hidden="true"><NovaesMark className="nw-hero-mark"/></div>
+  <div className="premium-globe" aria-hidden="true"><Image src="/brand/novaes-bola-nw-neon.webp" className="premium-official-nw" width={512} height={512} alt="" priority/></div>
   <div className="premium-floor" aria-hidden="true"/>
   <div className="premium-monitor">
     <div className="premium-monitor-frame">
       <div className="premium-webcam"/>
       <div className="premium-screen">
         <aside className="premium-sidebar">
-          <div className="premium-product"><Image src="/novaescrm-icon.webp" alt="" width={26} height={26}/><strong>Novaes<span>CRM</span></strong></div>
+          <div className="premium-product"><Image src="/brand/novaes-simbolo-ia.webp" alt="" width={26} height={26}/><strong>Novaes<span>CRM IA</span></strong></div>
           <small>ÁREA DE ATENDIMENTO</small>
           <div className="premium-tab selected">▣ <span>Conversas</span></div>
           <div className="premium-tab">♙ <span>Clientes</span></div>
@@ -40,7 +40,7 @@ export function Devices(){return <div className="premium-showcase" role="img" ar
     <div className="premium-phone-screen">
       <div className="premium-island"/>
       <div className="premium-status">9:41 <span>● ▮ ▰</span></div>
-      <div className="premium-phone-head"><Image src="/novaescrm-icon.webp" width={25} height={25} alt=""/><div><b>NovaesWeb</b><small>Assistente virtual • demonstração</small></div><span>⋮</span></div>
+      <div className="premium-phone-head"><Image src="/brand/novaes-simbolo-ia.webp" width={25} height={25} alt=""/><div><b>NovaesWeb</b><small>Assistente virtual • demonstração</small></div><span>⋮</span></div>
       <div className="premium-phone-chat"><div className="premium-date">Hoje</div><p>Oi! Quero criar um site pra minha loja.<small>09:41</small></p><p className="from-brand">Oiee! 💜 Sou a assistente virtual da NovaesWeb.<small>09:41 ✓✓</small></p><p className="from-brand">Que legal! Qual é o seu tipo de negócio? ✨<small>09:41 ✓✓</small></p><p>Uma loja de roupas! 👗<small>09:42</small></p></div>
       <div className="premium-phone-compose">☺ <span>Mensagem...</span><b>➤</b></div>
       <div className="premium-home-indicator"/>

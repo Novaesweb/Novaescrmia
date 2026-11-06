@@ -237,3 +237,35 @@ body{background:#050308}
  .premium-float-top{top:68px;left:3%}
  .premium-caption{bottom:0}
 }
+
+
+/* Identidade Novaes CRM IA — logo oficial e brilho vermelho/roxo */
+.official-brand{gap:9px;white-space:nowrap}
+.official-symbol{width:54px;height:54px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 0 10px #ff2f9c9e)}
+.official-brand-name{display:inline-flex;align-items:baseline;gap:.25em;font-size:clamp(16px,1.6vw,24px);letter-spacing:-.6px;font-weight:850}
+.official-brand-name b{color:#ff355a;text-shadow:0 0 12px #ff21588c}
+.header{background:#060309f5;border-bottom:1px solid #a41b578c;box-shadow:0 5px 30px #f1216226}
+.hero{isolation:isolate;overflow:hidden;background:
+radial-gradient(ellipse 43% 43% at -10% 65%,#ff163cba,transparent 77%),
+radial-gradient(ellipse 38% 40% at 110% 53%,#ff1346d1,transparent 77%),
+radial-gradient(ellipse 56% 56% at 75% 31%,#9518f45c,transparent 78%),
+radial-gradient(ellipse 75% 21% at 48% 104%,#f7189175,transparent 85%),#050207!important}
+.hero:before{content:"";position:absolute;top:auto;bottom:28px;left:-12%;right:-12%;width:124%;height:126px;transform:rotate(-2deg);opacity:.92;clip-path:polygon(0 68%,25% 88%,50% 50%,73% 56%,100% 16%,100% 25%,73% 67%,50% 60%,25% 96%,0 75%);background:linear-gradient(100deg,transparent,#ff294ea3 26%,#f3259e89 52%,#a828f2a8 75%,transparent)!important;filter:drop-shadow(0 0 19px #fb1a5f) drop-shadow(0 0 25px #a124ee);pointer-events:none;z-index:0}
+.hero:after{content:"";position:absolute;left:-12%;right:-12%;bottom:-16px;height:130px;pointer-events:none;background:radial-gradient(ellipse 48% 25% at 10% 68%,#ff164bb8,transparent 72%),radial-gradient(ellipse 52% 25% at 89% 45%,#e725b49a,transparent 75%);filter:blur(15px);z-index:0}
+.hero-grid,.benefits{position:relative;z-index:1}
+.premium-globe{display:grid!important;place-items:center!important;overflow:visible!important;filter:none!important}
+.premium-official-nw{display:block;position:relative;object-fit:contain;width:100%!important;height:100%!important;mix-blend-mode:screen;opacity:1;filter:drop-shadow(0 0 10px #fc2d97aa) drop-shadow(0 0 25px #a92eff98);pointer-events:none}
+.premium-floor{background:radial-gradient(ellipse,#ff1c7da4,transparent 72%)!important}
+.hero .btn.primary{background:linear-gradient(105deg,#ff174e,#fc355b)!important;box-shadow:0 0 17px #ff174ca8,0 0 35px #d027b77a!important}
+.hero .btn.secondary{border:2px solid #e2b1ef!important;box-shadow:0 0 15px #b02ef57c!important}
+.hero .eyebrow{border-color:#ff2853;box-shadow:0 0 15px #ff174fab,inset 0 0 12px #ff23545d!important}
+.hero h1.hero-brand strong{background:linear-gradient(110deg,#ff365d,#f20b50,#e72284)!important;background-clip:text!important;-webkit-background-clip:text!important;color:transparent!important;filter:drop-shadow(0 0 14px #f72d678a)}
+@media(max-width:900px){.official-symbol{width:46px;height:46px}.official-brand-name{font-size:18px}}
+@media(max-width:760px){
+.official-symbol{width:43px;height:43px}.official-brand-name{font-size:16px;gap:.16em}
+.hero{background:radial-gradient(ellipse 72% 37% at -21% 85%,#ff1449aa,transparent 79%),radial-gradient(ellipse 76% 37% at 118% 71%,#ff1d53b3,transparent 79%),radial-gradient(ellipse 83% 45% at 51% 56%,#8c1dee6b,transparent 84%),#050207!important}
+.premium-globe{width:98%!important;max-width:440px!important;top:-8px!important;left:50%!important;transform:translateX(-50%)!important}
+.premium-official-nw{object-fit:contain!important}
+.hero:before{bottom:58px;opacity:.7}
+}
+@media(max-width:390px){.official-symbol{width:36px;height:36px}.official-brand-name{font-size:14px}.premium-globe{width:100%!important;top:0!important}.hero:before{opacity:.52}}
