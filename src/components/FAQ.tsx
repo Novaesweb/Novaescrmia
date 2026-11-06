@@ -1,0 +1,8 @@
+import Link from "next/link";
+const questions=[
+{question:"Preciso ter um site da NovaesWeb para usar o CRM?",answer:"A proposta é permitir que empresas de diferentes segmentos utilizem o CRM, com integração a sites como uma possibilidade futura. As condições de contratação ainda não foram definidas."},
+{question:"O atendimento funciona no WhatsApp?",answer:"O projeto NovaesCRM foi pensado para centralizar conversas e evoluir a automação de atendimento pelo WhatsApp. A disponibilidade comercial e as configurações serão confirmadas quando o serviço estiver pronto para contratação."},
+{question:"A demonstração usa inteligência artificial de verdade?",answer:"Não. A demonstração pública mostra respostas pré-programadas apenas para apresentar o estilo do atendimento; ela não acessa IA, WhatsApp ou dados de clientes."},
+{question:"Já posso escolher um plano?",answer:"Ainda não. Os valores, as franquias e os recursos de cada plano estão em desenvolvimento, para que sejam definidos com base em custos e testes reais."}
+];
+export function FAQ(){return <section className="section faq-section" aria-labelledby="faq-title"><div className="wrap faq-layout"><div><span className="kicker">DÚVIDAS FREQUENTES</span><h2 id="faq-title">Tudo mais claro antes de começar.</h2><p>Conheça o que já estamos preparando e o que ainda depende de desenvolvimento.</p><Link className="inline-link" href="/sobre">Conheça a NovaesWeb →</Link></div><div className="faq-list">{questions.map((item)=><details key={item.question}><summary>{item.question}<span aria-hidden="true">+</span></summary><p>{item.answer}</p></details>)}</div></div></section>}
