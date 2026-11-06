@@ -3,7 +3,7 @@ import Image from "next/image";
 
 /** Mockup visual ilustrativo: não acessa clientes, WhatsApp ou IA real. */
 export function Devices(){return <div className="premium-showcase" role="img" aria-label="Monitor e smartphone com exemplos ilustrativos de atendimento NovaesWeb e a esfera neon NW ao fundo">
-  <div className="premium-globe" aria-hidden="true"><Image src="/brand/novaes-bola-nw-neon.webp" className="premium-official-nw" width={512} height={512} alt="" priority/></div>
+  
   <div className="premium-floor" aria-hidden="true"/>
   <div className="premium-monitor">
     <div className="premium-monitor-frame">

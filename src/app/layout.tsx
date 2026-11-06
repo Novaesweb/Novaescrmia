@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
+import "./visual-mobile-fix.css";
 import {SiteShell} from "@/components/SiteShell";
 export const metadata:Metadata={
  title:{default:"Novaes CRM IA | Atendimento inteligente",template:"%s | Novaes CRM IA"},
