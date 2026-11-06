@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
+import {NovaesMark} from "./NovaesMark";
 import {usePathname} from "next/navigation";
 import {useEffect,useState} from "react";
 const nav=[["Início","/"],["Recursos","/recursos"],["Planos","/planos"],["Demonstração","/demonstracao"],["Sobre nós","/sobre"],["Contato","/contato"]] as const;
 const footer=[["Recursos","/recursos"],["Planos","/planos"],["Demonstração","/demonstracao"],["Sobre nós","/sobre"],["Contato","/contato"],["Privacidade","/privacidade"],["Termos de uso","/termos"],["Cookies","/cookies"],["Acessibilidade","/acessibilidade"]] as const;
-function Brand(){return <Link href="/" className="brand" aria-label="NovaesCRM AI — página inicial"><img className="brand-logo" src="/novaescrm-icon.webp" width="58" height="58" alt="" /><span>Novaes<b>CRM</b></span></Link>}
+function Brand(){return <Link href="/" className="brand" aria-label="NovaesCRM AI — página inicial"><NovaesMark className="brand-mark"/><span>Novaes<b>CRM</b></span></Link>}
 export function SiteShell({children}:{children:React.ReactNode}){
  const [open,setOpen]=useState(false);
  const pathname=usePathname();

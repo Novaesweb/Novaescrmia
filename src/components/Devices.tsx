@@ -1,9 +1,9 @@
 import Image from "next/image";
-import {NeuralGlobe} from "./NeuralGlobe";
+import {NovaesMark} from "./NovaesMark";
 
 /** Mockup visual ilustrativo: não acessa clientes, WhatsApp ou IA real. */
 export function Devices(){return <div className="premium-showcase" role="img" aria-label="Monitor e smartphone com exemplos ilustrativos de atendimento NovaesWeb e a esfera neon NW ao fundo">
-  <div className="premium-globe" aria-hidden="true"><NeuralGlobe/><div className="premium-globe-mark">N<span>W</span></div></div>
+  <div className="premium-globe" aria-hidden="true"><NovaesMark className="nw-hero-mark"/></div>
   <div className="premium-floor" aria-hidden="true"/>
   <div className="premium-monitor">
     <div className="premium-monitor-frame">

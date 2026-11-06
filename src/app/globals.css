@@ -206,3 +206,34 @@ body{background:#050308}
 .rich-cta h2{font-size:25px}.rich-cta p{max-width:670px}
 @media(max-width:900px){.rich-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.rich-grid{grid-template-columns:1fr}.rich-card{padding:23px}.rich-cta{padding:23px}}
+
+/* Correção definitiva: logo NW não recortada, sem retângulo preto */
+.nw-mark{position:relative;display:inline-grid;place-items:center;flex:none;width:100%;aspect-ratio:1;background:transparent!important;isolation:isolate;overflow:visible}
+.nw-mark>.neural-globe{position:static!important;inset:auto!important;display:block;width:100%!important;height:100%!important;max-width:100%!important;filter:drop-shadow(0 0 7px #ef32bd7b)}
+.nw-mark-letters{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;transform:translate(-2%,1%);font-family:Arial,Helvetica,sans-serif;font-size:40%;font-weight:1000;font-style:italic;letter-spacing:-.28em;line-height:1;white-space:nowrap;text-shadow:0 0 3px #fff9,0 0 9px #ea2cda,0 0 14px #c32fff}
+.nw-mark-letters span:first-child{color:#ff315d;-webkit-text-stroke:.013em #ffb0eb}
+.nw-mark-letters span:last-child{color:#ac46ff;transform:translate(-2%,12%);-webkit-text-stroke:.013em #ffaeef}
+.brand-mark{width:59px;height:59px;min-width:59px;flex-shrink:0;overflow:visible}
+.brand{min-width:0;align-items:center}
+.premium-globe{overflow:visible!important}
+.premium-globe .nw-hero-mark{position:relative;width:100%;height:100%;display:grid}
+.premium-globe .nw-hero-mark>.neural-globe{width:100%!important;height:100%!important;filter:drop-shadow(0 0 18px #e82eb665)!important}
+.premium-globe .nw-mark-letters{font-size:46%;text-shadow:0 0 8px #fff9,0 0 23px #c82dc8}
+@media(max-width:760px){
+ .brand-mark{width:46px;height:46px;min-width:46px}
+ .premium-showcase{overflow:hidden;max-width:100%;width:100%!important;margin-left:0!important;transform:none!important;height:360px;margin-bottom:0}
+ .premium-globe{width:91%!important;max-width:390px;left:50%;right:auto;top:-4px;transform:translateX(-50%)}
+ .premium-monitor{width:82%;top:116px;left:1%;transform:rotateY(-6deg) rotateZ(-2deg) scale(.78);transform-origin:top left}
+ .premium-phone{right:2%;top:122px;transform:scale(.77) rotateZ(2deg);transform-origin:top right}
+ .premium-float-top{top:80px;left:7%;font-size:8px}
+ .premium-caption{left:7%;bottom:4px}
+}
+@media(max-width:420px){
+ .brand-mark{width:41px;height:41px;min-width:41px}
+ .premium-showcase{height:312px;margin-bottom:0!important}
+ .premium-globe{width:98%!important;top:-2px}
+ .premium-monitor{top:106px;transform:rotateY(-5deg) rotateZ(-2deg) scale(.67)}
+ .premium-phone{top:123px;right:0;transform:scale(.66) rotateZ(2deg)}
+ .premium-float-top{top:68px;left:3%}
+ .premium-caption{bottom:0}
+}
