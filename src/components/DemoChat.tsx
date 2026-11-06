@@ -5,7 +5,8 @@ const greeting="Oi! 👋 Esta é uma demonstração ilustrativa do NovaesCRM AI.
 const scenarios=[
 {label:"Cumprimento",question:"Oiee, tudo bem?",answer:"Oiee! Tudo ótimo 😊 Como posso te ajudar hoje?"},
 {label:"Horários",question:"Qual é o horário de vocês?",answer:"Consigo te ajudar! Para informar o horário correto, precisaria consultar os dados oficiais da loja."},
-{label:"Produtos",question:"Quais produtos vocês têm?",answer:"Posso te mostrar os produtos cadastrados no estabelecimento. Esta demonstração não está conectada a um catálogo real."},
+{label:"Loja de roupas",question:"Tenho uma loja de roupas. Vocês criam meu site?",answer:"Oie! 💜 A NovaesWeb trabalha com soluções digitais. Para apresentar uma proposta correta, precisaríamos conhecer as necessidades da sua loja."},
+{label:"Restaurante",question:"Vocês conseguem ajudar no atendimento de pedidos?",answer:"Podemos conversar sobre organização e automação de atendimento. Recursos de pedidos e integrações dependem de implantação e homologação."},
 {label:"Atendente humano",question:"Quero falar com uma pessoa.",answer:"Claro! 💜 Numa versão integrada, sua solicitação seria encaminhada à equipe. Nesta demonstração não há transferência real."}
 ];
 export function DemoChat({compact=false}:{compact?:boolean}){
