@@ -1,7 +1,15 @@
-# NovaesCRM AI — Site Público
+# NovaesCRM AI — Site público
 
-Este repositório é exclusivo do site institucional do NovaesCRM AI, separado do CRM operacional.
+Landing page pública em Next.js App Router, React e TypeScript. Separada do CRM operacional.
 
-Tecnologia prevista: Next.js (App Router), React e TypeScript.
+## Execução
 
-A publicação na Vercel será realizada apenas após conclusão e validação do site.
+```bash
+npm install
+npm run dev
+npm run build
+```
+
+Na Vercel, Framework Preset: Next.js, Root Directory: `./`.
+
+Planos, demonstração, contatos e documentos legais: páginas provisórias identificadas, sem preços ou serviços inventados. Não coloque em produção comercial sem validação jurídica e funcional.
